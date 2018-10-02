@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "Hidden Markov Models"
+date:   2018-10-01 21:30:00 -0700
+categories: HMM hidden markov model
+---
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+Something I am working on for my Fundamentals of Statistical Learning course.<br>
+This post assumes that you know what HMMs are, and solves the following problems:<br><br>
+<b>Problem 1: Observation Likelihood</b>
+<br>
+The likelyhood of seeing a set of observations given the parameters of a HMM.
+
+<b>Problem 3: Optimize model for Observations</b><br>
+Find the model parameters that best describe the input observations.
+
+$$\alpha = $$ Forward Probability
+
+<h1><b>***Post under Construction***</b><h1>
