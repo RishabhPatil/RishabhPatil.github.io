@@ -4,7 +4,7 @@ title:  "Hidden Markov Models"
 date:   2018-10-01 21:30:00 -0700
 categories: HMM hidden markov model
 ---
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 I worked on this for my Fundamentals of Statistical Learning course.<br>
 This post assumes that you know what HMMs are and how they function, this is just a commentary of the implementation.<br>
 In case you want to deep dive into the math, <a href='https://www.ece.ucsb.edu/Faculty/Rabiner/ece259/Reprints/tutorial%20on%20hmm%20and%20applications.pdf'>this is a wonderful resource.</a><br>
