@@ -5,6 +5,7 @@ date:   2018-10-01 21:30:00 -0700
 categories: HMM hidden markov model
 ---
 Work in Progress
+{::
 <!-- <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 I worked on this for my Fundamentals of Statistical Learning course.<br>
 This post assumes that you know what HMMs are and how they function, this is just a commentary of the implementation.<br>
@@ -306,4 +307,4 @@ Which returns:
 
 Maybe I should make a separate post for EM algorithm.<br>
 I might keep adding comments, but that should be it for this post.<br>
-Email me if you come across any issues. -->
+Email me if you come across any issues. -->}
