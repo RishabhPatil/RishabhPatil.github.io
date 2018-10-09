@@ -20,7 +20,7 @@ Find the model parameters that best describe the input observations.
 <hr>
 <h2>Descriptors of a HMM:</h2>
 $$ M = \text{Number of unique observation symbols} $$<br>
-$$ V = \{ v_1, v_2 ... v_T \} = \text{Set of observation symbols} $$<br><br>
+$$ V = \{ v_1, v_2 ... v_M \} = \text{Set of observation symbols} $$<br><br>
 $$ t = \text{time instant; The symbol observed at time t is } v_t$$<br><br>
 $$ N = \text{Number of states in HMM} $$<br>
 $$ S = \{ S_1, S_2 ... S_N \} = \text{Set of states} $$<br><br>
@@ -106,7 +106,7 @@ Emission Probabilities:
 We define $$\alpha_t(i)$$ as the probability of observing $$O_1$$ through $$O_t$$ and being in state $$S_i$$ at time t given the model parameters,<br>
 $$\alpha_t(i) = P(O_1, O_2 ... O_t, q_t = S_i | \lambda)$$<br><br>
 At time $$t=0$$ it can defined as,<br>
-$$\alpha_0(i) = pi_i * b_i(O_0) $$
+$$\alpha_0(i) = \pi_i * b_i(O_0) $$
 <br><br>
 After $$t=0$$,<br>
 $$\alpha_{t+1}(i) = [\sum_{j=0}^N \alpha_t(i)*a_{ij}]*b_j(O_{t+1}) $$
