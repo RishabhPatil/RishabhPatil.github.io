@@ -6,12 +6,17 @@ permalink: /about/
 
 Born and brought up in India.<br>
 Completed BE from Pune Institute of Computer Technology in 2017.<br>
-Currently pursuing MCS from Arizona State University.<br>
-More professional stuff [here](linkedin.com/in/rishabhpatil/) and [here](https://github.com/RishabhPatil/).
+Currently pursuing MCS from Arizona State University.
+This semester I am taking:
+[Fundamentals of Statistical Learning](https://webapp4.asu.edu/catalog/course?s=CSE&n=569&c=TEMPE&t=2187&f=LL2&r=79123&=)<br>
+[Data Visualization](https://webapp4.asu.edu/catalog/course?s=CSE&n=578&c=TEMPE&t=2187&f=COORL1-74&r=94371&=)<br>
+[Theoretical Computer Science](https://webapp4.asu.edu/catalog/course?s=CSE&n=355&c=TEMPE&t=2187&f=COORL1-74&r=86475&=)
 <br>
 <br>
-Fascinated by all things maths and science.<br>
-Have spent an eternity on Dota 2.<br>
-Now listening: [Trench](https://en.wikipedia.org/wiki/Trench_(album)).<br><br>
+I will make posts related to concepts I am studying right now.<br>
+And also some content related to my projects.<br>
+Please take a look at [my Github](https://github.com/RishabhPatil) for previous work.
+<br>
+<br>
 Send me cool astronomy stuff at [rishabhpatil@gmail.com](rishabhpatil@gmail.com).<br>
 [Here's one for you.](https://apod.nasa.gov/apod/)
