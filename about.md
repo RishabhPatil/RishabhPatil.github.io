@@ -6,8 +6,8 @@ permalink: /about/
 
 Born and brought up in India.<br>
 Completed BE from Pune Institute of Computer Technology in 2017.<br>
-Currently pursuing MCS from Arizona State University.
-This semester I am taking:
+Currently pursuing MCS from Arizona State University.<br>
+Courses I am taking this semester:<br>
 [Fundamentals of Statistical Learning](https://webapp4.asu.edu/catalog/course?s=CSE&n=569&c=TEMPE&t=2187&f=LL2&r=79123&=)<br>
 [Data Visualization](https://webapp4.asu.edu/catalog/course?s=CSE&n=578&c=TEMPE&t=2187&f=COORL1-74&r=94371&=)<br>
 [Theoretical Computer Science](https://webapp4.asu.edu/catalog/course?s=CSE&n=355&c=TEMPE&t=2187&f=COORL1-74&r=86475&=)
