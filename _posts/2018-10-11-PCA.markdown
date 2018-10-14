@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "PCA, Whitening and ZCA"
-date:   2018-10-01 21:30:00 -0700
+date:   2018-10-10 21:30:00 -0700
 categories: feature selection PCA whitening ZCA dimensionality reduction
 ---
 <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
