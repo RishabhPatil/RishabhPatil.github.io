@@ -126,8 +126,8 @@ author:
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
     - label: "LinkedIn"
-      icon: "fab fa-fw fa-LinkedIn"
-      # url: "linkedin.com/in/RishabhPatil"
+      icon: "fab fa-fw fa-linkedin"
+      url: "linkedin.com/in/RishabhPatil"
 
 
 # Site Footer
