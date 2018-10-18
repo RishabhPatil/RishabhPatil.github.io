@@ -2,7 +2,7 @@
 layout: single
 title:  "Hidden Markov Models"
 date:   2018-10-01 21:30:00 -0700
-<!-- categories: HMM hidden markov model -->
+tags: HMM hidden-markov-model
 ---
 <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 I worked on this for my Fundamentals of Statistical Learning course.<br>
