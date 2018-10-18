@@ -1,24 +1,39 @@
 ---
-layout: post
+layout: single
 title:  "PCA, Whitening and ZCA"
 date:   2018-10-10 21:30:00 -0700
-categories: feature selection PCA whitening ZCA dimensionality reduction
+<!-- tags: PCA feature-selection -->
+tags: feature-selection PCA whitening ZCA dimensionality-reduction
 ---
 <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 [Complete Notebook with a small example of Fisher's Linear Discriminant included.](https://github.com/RishabhPatil/FundamentalsOfStatisticalLearning/blob/master/Assignment%202/PCA%20and%20Fisher's.ipynb)
 
 PCA stands for Principal Component Analysis, or in simpler words: picking out the features which best represent the data.<br>
 This is done by finding the "directions" (or features) along which the data has the most variance.<br>
-Each new direction is perpendicular to the previously chosen directions or each extracted feature is independent of the rest.<br>
+[We will use the terms 'feature' and 'direction' interchangebly through this exercise.]<br>
+After PCA each direction is perpendicular to the other directions or which means that extracted feature is independent of the rest.<br>
 <br>
-But why do we maximize variance?<br>
-Intuitively we can say that if the value of a feature is "farther" from the other data points, it is easier to identify the point, makes it unique.<br>
-Hence we try to maximize the distance from the mean (for each feature individually).<br>
+Why maximize variance?<br>
+Intuitively we can say that if the value of a feature differs a lot for all data points, it is easier to identify them.<br>
+Hence we try to maximize the distance from the center or the mean (for each feature individually).<br>
 <br>
-PCA doesnt actually pick out the best features.<br>
-For a set of points in a d-dimensional space, PCA will return $$ \text{d} $$ new dimensions which act as the new axes.<br>
-These axes can be "sorted" by the variance in their direction.<br>
-When we say we take the top k features, it means that we are taking components of the d - dimensional data onto the space defined by the k - axes (directions/dimensions with the highest variance).<br>
-And since we are taking the "best" features, the amount of information lost is minimized.<br>
+PCA doesnt reduce the number of features.<br>
+For a set of points in a D-dimensional space, PCA will return $$ \text{D} $$ new dimensions which act as the new axes.<br>
+We can choose to take the best features from these.
+
+<figure>
+    <a href="/assets/images/image-filename-1-large.jpg"><img src="/assets/img/GaussianScatterPCA.svg"></a>
+    <figcaption><b>The vectors represent the directions with the most variance, these act as the best features. When dealing with higher dimensional data, we might have to remove some of the features after PCA, to reduce computational cost.</b><a href="https://en.wikipedia.org/wiki/Principal_component_analysis#/media/File:GaussianScatterPCA.svg"><br>Image taken from wikipedia</a>, credit to original author <a href="https://commons.wikimedia.org/wiki/User:Nicoguaro">Nicoguaro</a>. License: <a href='https://creativecommons.org/licenses/by/4.0'>CC BY 4.0</a></figcaption>
+</figure>
+
+Sorting (descending) the variance for these directions, will give us the best to worst features.<br>
+It important to remember that some amount of information is lost when we remove features.<br>
+This is why we remove the features with the smallest amount of variance.<br>
+We choose the top k features, such that loss is minimized. We'll see later how percentage loss is calculated.<br>
+<br>
+Finally we take components of our original data onto the space defined by the k dimensions.<br>
+And you are left with the best possible representation of the data in k dimensions.<br><br>
+Now let's take a look at the math and its implementation in python.<br>
+
 
 ***WIP***

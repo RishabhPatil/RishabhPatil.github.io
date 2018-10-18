@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: single
 title:  "First!"
 date:   2018-09-26 16:50:00 -0700
-categories: jekyll update
+<!-- categories: jekyll update -->
 ---
 Hi!
 
