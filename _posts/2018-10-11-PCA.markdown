@@ -35,5 +35,32 @@ Finally we take components of our original data onto the space defined by the k 
 And you are left with the best possible representation of the data in k dimensions.<br><br>
 Now let's take a look at the math and its implementation in python.<br>
 
+<h3> Maximize Variance along one direction </h3>
+We take the component of $$ \text{X} $$ along a direction such that variance of resulting data is maximized.<br>
+Lets call the resulting vector $$ \text{Y} $$.
+
+$$ \text{Y}_{k} = \text{e}_{1}^T \text{X}_{k} $$ <br>
+$$ \bar{\text{Y}} = \frac{1}{n}\sum_{k=1}^{n} \text{Y}_{k} = \text{e}_{1}^T \bar{\text{X}} $$ <br>
+$$ \text{Variance} = \frac{1}{n} \sum_{k=1}^{n} (\text{Y}_{k} - \bar{\text{Y}})^2 $$ <br>
+
+Which can be converted into:
+$$ \text{Variance} = \text{e}_{1}^T \frac{1}{n} \sum_{k=1}^{n} (\text{X}_{k} - \bar{\text{X}})(\text{X}_{k} - \bar{\text{X}})^T \text{e}_{1} $$
+$$ \text{Variance} = \text{e}_{1}^T \text{C} \text{e}_{1} $$
+
+Where $$ \text{C} $$ is the covariance matrix.
+
+Now we need to find $$\text{e}_{1}$$ which maximizes variance, with the constraint $$\text{e}_{1}^T \text{e}_{1} = 1 $$.
+
+Using the Lagrangian Multiplier Method:
+
+$$ \text{L} = \text{e}_{1} C \text{e}_{1}^T - \lambda (\text{e}_{1}^T \text{e}_{1} - 1)$$
+
+Taking derivative wrt $$ \text{e}_{1} $$
+
+$$  \frac{\text{dL}}{\text{de}_{1}} = C \text{e}_{1} - \lambda \text{e}_{1} = 0 $$<br>
+
+Therefore,<br>
+
+$$ C \text{e}_{1} = \lambda \text{e}_{1} $$
 
 ***WIP***
