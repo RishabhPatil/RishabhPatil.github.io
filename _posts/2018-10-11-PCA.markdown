@@ -44,23 +44,77 @@ $$ \bar{\text{Y}} = \frac{1}{n}\sum_{k=1}^{n} \text{Y}_{k} = \text{e}_{1}^T \bar
 $$ \text{Variance} = \frac{1}{n} \sum_{k=1}^{n} (\text{Y}_{k} - \bar{\text{Y}})^2 $$ <br>
 
 Which can be converted into:
+
 $$ \text{Variance} = \text{e}_{1}^T \frac{1}{n} \sum_{k=1}^{n} (\text{X}_{k} - \bar{\text{X}})(\text{X}_{k} - \bar{\text{X}})^T \text{e}_{1} $$
 $$ \text{Variance} = \text{e}_{1}^T \text{C} \text{e}_{1} $$
 
 Where $$ \text{C} $$ is the covariance matrix.
 
-Now we need to find $$\text{e}_{1}$$ which maximizes variance, with the constraint $$\text{e}_{1}^T \text{e}_{1} = 1 $$.
+Now we need to find $$\text{e}_{1}$$ which maximizes variance, with the constraint:
+
+$$ \text{e}_{1}^T \text{e}_{1} = 1$$
 
 Using the Lagrangian Multiplier Method:
 
-$$ \text{L} = \text{e}_{1} C \text{e}_{1}^T - \lambda (\text{e}_{1}^T \text{e}_{1} - 1)$$
+$$ \text{L} = \text{e}_{1}^T C \text{e}_{1} - \lambda (\text{e}_{1}^T \text{e}_{1} - 1)$$
 
 Taking derivative wrt $$ \text{e}_{1} $$
 
-$$  \frac{\text{dL}}{\text{de}_{1}} = C \text{e}_{1} - \lambda \text{e}_{1} = 0 $$<br>
+$$ \text{ } \frac{\text{dL}}{\text{de}_{1}} = C \text{e}_{1} - \lambda \text{e}_{1} = 0 $$
 
 Therefore,<br>
 
 $$ C \text{e}_{1} = \lambda \text{e}_{1} $$
 
-***WIP***
+Using $$\text{e}_{1}$$ we can solve for the next direction vector $$\text{e}_{2}$$:
+Since the two directions should be perpendicular, we have two constraints:
+
+$$ \text{e}_{2}^T \text{e}_{2} = 1$$
+$$ \text{e}_{2}^T \text{e}_{1} = 0$$
+
+Using the Lagrangian Multiplier Method:
+
+$$ \text{L} = \text{e}_{2}^T C \text{e}_{2} - \lambda_{2} (\text{e}_{2}^T \text{e}_{2} - 1) - \lambda_{3} (\text{e}_{2}^T \text{e}_{1})$$
+
+Which gives us,
+
+$$ C \text{e}_{2} = \lambda_{2} \text{e}_{2} $$
+
+Similarly we can solve for D eigen vectors $$\text{e}_{1}, \text{e}_{2}, \text{e}_{3} ... \text{e}_{D}$$
+such that $$ \lambda_{1} > \lambda_{2} > \lambda_{3} ...  > \lambda_{D} $$
+
+The higher the value of $$\lambda$$ for a direction, the higher is the variance of data in that direction.
+
+$$
+\mathbf{E} = \begin{vmatrix} 
+| & | & | & ... & | \\
+\text{e}_{1} & \text{e}_{2} & \text{e}_{3} & ... & \text{e}_{D} \\
+| & | & | & ... & | \\
+\end{vmatrix}
+$$
+
+$$\mathbf{E}$$ is a D by D matrix.
+
+To get the PCA result of our data $$ \text{X} $$ we do:
+
+$$ \text{X}^{'} = \text{E}^{T} \text{X} $$
+
+To take the k most important, we simply take the k directions sorted (descending) by $$\lambda$$. Hence the directions with low variance are ignored.
+
+$$
+\mathbf{E}_{k} = \begin{vmatrix} 
+| & | & | & ... & | \\
+\text{e}_{1} & \text{e}_{2} & \text{e}_{3} & ... & \text{e}_{k} \\
+| & | & | & ... & | \\
+\end{vmatrix}
+$$
+
+$$\mathbf{E}_{k}$$ is a D by k matrix.
+
+PCA in k dimensions:
+
+$$ \text{X}^{'} = \text{E}_{k}^{T} \text{X} $$
+
+Although this causes loss of information, this is the least possible loss.
+
+$$ \text{Fraction of variance retained} = \frac{\sum_{i=1}^{k} \lambda_i}{\sum_{i=1}^{D} \lambda_i} $$
