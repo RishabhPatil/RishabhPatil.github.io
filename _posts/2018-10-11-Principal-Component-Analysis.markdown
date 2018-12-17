@@ -1,9 +1,9 @@
 ---
 layout: single
-title:  "PCA, Whitening and ZCA"
+title:  "Principal Component Analysis"
 date:   2018-10-10 21:30:00 -0700
 <!-- tags: PCA feature-selection -->
-tags: feature-selection PCA whitening ZCA dimensionality-reduction
+tags: feature-selection PCA dimensionality-reduction
 ---
 <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 [Complete Notebook with a small example of Fisher's Linear Discriminant included.](https://github.com/RishabhPatil/FundamentalsOfStatisticalLearning/blob/master/Assignment%202/PCA%20and%20Fisher's.ipynb)
