@@ -12,20 +12,20 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "aqua" #"default" "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Yet Another Machine Learning Blog"
+title                    : "Rishabh Patil's Website"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "Rishabh Patil"
+description              : "My website."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
-words_per_minute         : 100
+words_per_minute         : 60
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
   disqus:
@@ -102,8 +102,8 @@ analytics:
 # Site Author
 author:
   name             : "Rishabh Patil"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Grad Student at ASU"
+  avatar           : "/assets/img/RishabhPatil.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "CS Graduate Student at ASU"
   location         : "Tempe, AZ"
   email            :
   links:
@@ -127,7 +127,7 @@ author:
       # url: "https://instagram.com/"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "linkedin.com/in/RishabhPatil"
+      url: "https://linkedin.com/in/RishabhPatil"
 
 
 # Site Footer
